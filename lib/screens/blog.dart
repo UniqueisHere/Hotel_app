@@ -1,26 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:hotel_app/widgets/custom_blogs.dart';
-import 'package:hotel_app/widgets/custom_drawer.dart';
 
 class blogPage extends StatelessWidget {
-  blogPage({Key? key}) : super(key: key);
+  const blogPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Blog'),
+        title: const Text('Blog'),
         centerTitle: true,
         backgroundColor: Colors.greenAccent,
       ),
-      body: Container(
+      body: SizedBox(
         height: double.infinity,
         width: double.infinity,
         child: Padding(
           padding: const EdgeInsets.all(14.0),
-          child: Container(
+          child: SizedBox(
             height: 250,
             width: 350,
             child: ListView(

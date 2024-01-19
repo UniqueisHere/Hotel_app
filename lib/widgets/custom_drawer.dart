@@ -3,7 +3,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hotel_app/screens/about_us.dart';
 import 'package:hotel_app/screens/blog.dart';
 import 'package:hotel_app/screens/contact_us.dart';
-import 'package:hotel_app/screens/home_screen.dart';
 import 'package:hotel_app/screens/services.dart';
 
 class customDrawer extends StatefulWidget {
@@ -31,7 +30,7 @@ class _customDrawerState extends State<customDrawer> {
         child: Column(
           children: [
             ListTile(
-              leading: Icon(Icons.home),
+              leading: const Icon(Icons.home),
               tileColor: Colors.white38,
               title: Text(
                 'Home',
@@ -44,11 +43,11 @@ class _customDrawerState extends State<customDrawer> {
                 widget.scaffold_key.currentState!.closeDrawer();
               },
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             ListTile(
-              leading: Icon(Icons.person),
+              leading: const Icon(Icons.person),
               title: Text(
                 'About Us',
                 style: GoogleFonts.blackAndWhitePicture(
@@ -61,7 +60,7 @@ class _customDrawerState extends State<customDrawer> {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) {
-                      return aboutUs();
+                      return const aboutUs();
                     },
                   ),
                 );
@@ -72,11 +71,11 @@ class _customDrawerState extends State<customDrawer> {
                 });
               },
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             ListTile(
-              leading: Icon(Icons.room_service),
+              leading: const Icon(Icons.room_service),
               title: Text(
                 "Our Services's",
                 style: GoogleFonts.blackAndWhitePicture(
@@ -89,17 +88,17 @@ class _customDrawerState extends State<customDrawer> {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) {
-                      return servicesPage();
+                      return const servicesPage();
                     },
                   ),
                 );
               },
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             ListTile(
-              leading: Icon(Icons.book),
+              leading: const Icon(Icons.book),
               title: Text(
                 'Blog',
                 style: GoogleFonts.blackAndWhitePicture(
@@ -112,17 +111,17 @@ class _customDrawerState extends State<customDrawer> {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) {
-                      return blogPage();
+                      return const blogPage();
                     },
                   ),
                 );
               },
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             ListTile(
-              leading: Icon(Icons.contact_page),
+              leading: const Icon(Icons.contact_page),
               title: Text(
                 'Contact Us',
                 style: GoogleFonts.blackAndWhitePicture(
@@ -135,17 +134,17 @@ class _customDrawerState extends State<customDrawer> {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) {
-                      return contactUs();
+                      return const contactUs();
                     },
                   ),
                 );
               },
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             ListTile(
-              leading: Icon(Icons.book_online_rounded),
+              leading: const Icon(Icons.book_online_rounded),
               title: Text(
                 'Book Online',
                 style: GoogleFonts.blackAndWhitePicture(
@@ -155,7 +154,7 @@ class _customDrawerState extends State<customDrawer> {
               ),
               onTap: () {},
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
           ],

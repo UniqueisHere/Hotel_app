@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hotel_app/screens/about_us.dart';
 import 'package:hotel_app/widgets/custom_drawer.dart';
 import 'package:hotel_app/widgets/date_picker.dart';
 
@@ -24,7 +23,7 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.greenAccent,
         centerTitle: true,
       ),
-      body: Container(
+      body: SizedBox(
         height: double.infinity,
         width: double.infinity,
         child: ListView(
@@ -39,7 +38,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
+            const SizedBox(
               height: 200,
               width: 300,
               child: startDate(),
@@ -50,7 +49,7 @@ class HomeScreen extends StatelessWidget {
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.greenAccent,
         selectedItemColor: Colors.black,
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',

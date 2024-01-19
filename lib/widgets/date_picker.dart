@@ -1,7 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 
@@ -36,7 +33,7 @@ class _startDateState extends State<startDate> {
                 fontSize: 45,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
@@ -45,30 +42,30 @@ class _startDateState extends State<startDate> {
                 Expanded(
                   child: ElevatedButton(
                     style:
-                        ElevatedButton.styleFrom(primary: Colors.greenAccent),
-                    child: Text(DateFormat('yyyy/MM/dd').format(start)),
+                        ElevatedButton.styleFrom(backgroundColor: Colors.greenAccent),
                     onPressed: pickDateRange,
+                    child: Text(DateFormat('yyyy/MM/dd').format(start)),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 Expanded(
                   child: ElevatedButton(
                     style:
-                        ElevatedButton.styleFrom(primary: Colors.greenAccent),
-                    child: Text(DateFormat('yyyy/MM/dd').format(end)),
+                        ElevatedButton.styleFrom(backgroundColor: Colors.greenAccent),
                     onPressed: pickDateRange,
+                    child: Text(DateFormat('yyyy/MM/dd').format(end)),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
               ],
             ),
             Text(
               'Total Days: ${difference.inDays}',
-              style: TextStyle(fontSize: 20),
+              style: const TextStyle(fontSize: 20),
             )
           ],
         ),

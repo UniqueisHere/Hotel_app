@@ -24,7 +24,7 @@ class _blogsContainerState extends State<blogsContainer> {
       width: 350,
       decoration: BoxDecoration(color: Colors.white, boxShadow: [
         BoxShadow(
-          offset: Offset(2, 3),
+          offset: const Offset(2, 3),
           color: Colors.black.withOpacity(
             0.2,
           ),
@@ -42,17 +42,17 @@ class _blogsContainerState extends State<blogsContainer> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(150, 0, 0, 0),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.calendar_month,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 20,
                 ),
                 Text(

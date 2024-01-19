@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hotel_app/screens/home_screen.dart';
 import 'package:hotel_app/screens/services.dart';
-import 'package:hotel_app/widgets/custom_drawer.dart';
 
 class aboutUs extends StatelessWidget {
-  aboutUs({Key? key}) : super(key: key);
+  const aboutUs({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.greenAccent,
-        title: Text('About Us'),
+        title: const Text('About Us'),
         centerTitle: true,
       ),
       body: Container(
@@ -45,7 +42,7 @@ class aboutUs extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 13,
                   ),
                   Wrap(
@@ -58,29 +55,29 @@ class aboutUs extends StatelessWidget {
                       )
                     ],
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Row(
                     children: [
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.greenAccent),
+                            backgroundColor: Colors.greenAccent),
                         onPressed: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
                               builder: (context) {
-                                return servicesPage();
+                                return const servicesPage();
                               },
                             ),
                           );
                         },
-                        child: Text('Book Room Now'),
+                        child: const Text('Book Room Now'),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 5,
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.greenAccent),
+                            backgroundColor: Colors.greenAccent),
                         onPressed: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
@@ -90,7 +87,7 @@ class aboutUs extends StatelessWidget {
                             ),
                           );
                         },
-                        child: Text('Back To Home Page'),
+                        child: const Text('Back To Home Page'),
                       ),
                     ],
                   )

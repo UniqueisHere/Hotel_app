@@ -1,23 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hotel_app/widgets/custom_drawer.dart';
 
 class contactUs extends StatelessWidget {
-  contactUs({Key? key}) : super(key: key);
+  const contactUs({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Contact Us'),
+        title: const Text('Contact Us'),
         centerTitle: true,
         backgroundColor: Colors.greenAccent,
       ),
       body: Center(
-        child: Container(
+        child: SizedBox(
           height: 550,
           width: 350,
           child: Column(
@@ -81,9 +78,9 @@ class contactUs extends StatelessWidget {
                   ),
                 ],
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.end,
-                children: const [
+                children: [
                   FaIcon(
                     FontAwesomeIcons.facebookF,
                     color: Colors.blue,

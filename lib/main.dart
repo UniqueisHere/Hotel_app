@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hotel_app/screens/about_us.dart';
 import 'package:hotel_app/screens/home_screen.dart';
-import 'package:hotel_app/widgets/date_picker.dart';
 
 void main() {
   runApp(const MyApp());
